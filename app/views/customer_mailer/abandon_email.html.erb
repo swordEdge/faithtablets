@@ -1,0 +1,31 @@
+<%= image_tag attachments['logo.png'].url %>
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">Dear <%= @lead.first_name %>,</p>
+<h1 style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 36px; line-height: 1.2; color: #000; font-weight: 200; margin: 40px 0 10px; padding: 0;">Limited Time Offer</h1>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  I noticed you did not complete your <%= @content[:name] %> purchase. I'd like to offer you a limited-time special promotion: Free shipping off of your <%= @content[:disorder] %> tablet purchase.
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  I am so certain that your child will benefit from our tablet that I want to get it in your hands as quickly as possible. Our expedited shipping is normally $4.95 but if you use code <strong>noshipping</strong> at checkout you can get it shipped for FREE.
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  We hope that you'll come back and join the <%= @content[:name] %> family today. This offer is valid for your email address, <strong><%= @lead.email %></strong>, for 24 hours only.
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 2.6; font-weight: bold; margin: 0 0 10px; padding: 0;">
+  <a style="color: #4cae47;" href="<%= @content[:base_url] %>">Buy Now</a>
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+Sincerely,
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  The <%= @content[:name] %> Family<br>
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  PS: Remember to use code <strong>noshipping</strong> at checkout.
+</p>

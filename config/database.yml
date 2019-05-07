@@ -1,0 +1,15 @@
+development: &defaults
+  adapter: postgresql
+  database: puzzlepiece_development
+
+test:
+  adapter: postgresql
+  database: puzzlepiece_test
+  min_messages: WARNING
+
+staging:
+  <<: *defaults
+
+production:
+  adapter: postgresql
+  database: puzzlepiece_production

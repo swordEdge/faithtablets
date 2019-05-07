@@ -1,0 +1,468 @@
+.container
+  width: 100%
+  max-width: 1440px
+
+.buttons
+  margin-left: 20px
+
+.navbar
+  font-size: 16px
+  padding: 20px 0
+  margin-bottom: 0
+  img
+    height: 50px
+    float: left
+    +respond_to(xs)
+      height: 40px
+  h1
+    display: block
+    float: left
+    margin: 12px 0 0 10px
+    font-size: 24px
+
+  .buy-now
+    float: right
+
+  .call-now
+    float: right
+    font-weight: bold
+    text-align: right
+    padding-left: 20px
+    strong
+      display: block
+      color: #4caf48
+      text-transform: uppercase
+      font-size: 16px
+
+.available
+  font-size: 12px
+  img
+    height: 40px
+    margin: 0 5px
+    +respond_to(xs)
+      height: 30px
+      margin: 0 3px
+
+.apps .available
+  color: #4caf48
+
+a.offset
+  display: block
+  position: relative
+  visibility: hidden
+
+.hero
+  .content
+    background: $white image-url('hero-father-son.jpg') center top no-repeat
+    background-size: cover
+    color: #fff
+    +respond_to(xs)
+      background: none
+
+  .container
+    position: relative
+  .overlay
+    position: absolute
+    background-color: rgba(0,0,0,0.5)
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+  .video
+    height: 450px
+    width: 730px
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    z-index: 99
+  .watch, .watch:hover
+    color: #3d3d4a
+    background-color: rgba(255,255,255,0.5)
+    border: 4px solid #3d3d4a
+    width: 280px
+  .play
+    cursor: pointer
+    position: absolute
+    top: 120px
+    right: 250px
+    +respond_to(sm)
+      right: 150px
+
+  h2
+    color: #454545
+
+  .kid
+    background: $white image-url('hero-xs.jpg') center top no-repeat
+    background-size: cover
+    height: 400px
+
+  .father
+    height: 450px
+    padding-top: 50px
+
+    button
+      display: block
+
+  .buy-now, .buy-now:hover, .buy-now:active, .buy-now:focus
+    background: #4caf48
+    border: 3px solid #4caf48
+    width: 280px
+    margin-bottom: 10px
+
+  p
+    color: #fff
+    font-size: 18px
+    line-height: 1.2em
+    margin-bottom: 20px
+    color: #57606e
+
+  h1
+    color: #57606e
+    font-size: 40px
+
+.accolades
+  background-color: #a6b7bc
+  line-height: 1.6em
+  blockquote
+    border: none
+    margin: 0
+    padding: 0
+  .google
+    img
+      height: 60px
+    text-align: center
+    color: #fff
+  a
+    color: #fff
+  .row
+    margin: 15px 0
+
+.navbar
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus
+    background: #f6a71b
+    border: #f6a71b
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus
+  background: #4caf48
+  border: #4caf48
+  border-radius: 20px
+  color: #fff
+  font-size: inherit
+  padding: 12px 28px
+
+.app-icons
+  font-size: 14px
+  line-height: 1em
+  margin-bottom: 20px
+  .col-xs-2
+    padding: 0
+    text-align: right
+  h4
+    margin: 0
+  img
+    float: left
+    margin-right: 10px
+  .game-icons
+    width: 100%
+    clear: both
+
+.clear
+  clear: both
+
+.main
+  width: 100%
+  clear: both
+
+.non_verbal
+  img.tablet
+    width: 100%
+
+section
+  .buy-now, .buy-now:hover
+    font-size: 22px
+    width: 280px
+
+.personalize
+  .action
+    margin: 30px 0 10px
+  .buy-now
+    font-size: 22px
+    width: 280px
+    margin-left: 10px
+  hr
+    margin-bottom: 40px
+
+i.icon
+  display: inline-block
+  margin-right: 5px
+  width: 41px
+  color: #4caf48
+  font-size: 41px
+  +respond_to(xs)
+    margin-right: 3px
+    font-size: 35px
+    width: 35px
+  &.icons8-More
+    font-size: 7px
+
+.apps
+  margin: 30px 10px
+  ul
+    margin-top: 25px
+    overflow: hidden
+    text-decoration: none
+    padding: 0
+    margin-left: 50px
+    +respond_to(xs)
+      margin-left: 0
+  li
+    display: inline-block
+    line-height: 41px
+    width: 24.7%
+    +respond_to(md)
+      width: 33%
+    +respond_to(xs)
+      line-height: 35px
+      font-size: 12px
+      width: 49%
+    label
+      font-weight: 400
+  .col-md-6
+    margin-bottom: 20px
+
+  .btn
+    +respond_to(xs)
+      margin: 30px auto
+      display: block
+    +respond_to(sm)
+      margin: 30px auto
+      display: block
+
+p
+  color: #67707f
+  font-weight: 200
+  line-height: 1.8em
+  font-size: 16px
+
+h2
+  font-size: 40px
+
+hr
+  margin-top: 50px
+  margin-bottom: 20px
+  width: 300px
+  height: 3px
+  color: #a6b7bc
+  background-color: #a6b7bc
+  border: none
+
+.tablet-details, .testimonials
+  hr
+    width: 200px
+    height: 3px
+    color: #f6d238
+    background-color: #f6d238
+    border: none
+
+.tablet-details
+  background: $white image-url('tablet-bg.jpg') center bottom no-repeat
+  background-size: cover
+  color: #fff
+  .column
+    padding: 0 60px
+    margin-bottom: 30px
+  h2
+    font-size: 38px
+  h4
+    font-family: 'Open Sans', sans-serif
+    font-size: 22px
+    font-weight: 400
+  p
+    color: #fff
+    line-height: 1.2em
+  .btn
+    background: #4caf48
+    border: #4caf48
+
+  .content
+    margin: 75px 0 0 0
+    text-align: center
+    +respond_to(xs)
+      margin: 25px 0 0 0
+
+  .relative
+    position: relative
+
+  img.tablet-large
+    margin-top: 50px
+    width: 1000px
+
+    +respond_to(md)
+      width: 700px
+    +respond_to(sm)
+      width: 500px
+    +respond_to(xs)
+      margin-top: 30px
+      width: 90%
+
+.testimonials
+  padding: 20px 0
+
+.embed-container
+  position: relative
+  padding-bottom: 56.25%
+  height: 0
+  overflow: hidden
+  max-width: 100%
+  height: auto
+
+.embed-container iframe, .embed-container object, .embed-container embed
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+.footer
+  img
+    height: 50px
+    +respond_to(xs)
+      height: 30px
+  padding-bottom: 20px
+  background: #4e545f
+  color: #aaa
+  .footer__logo
+  .footer__buy-now
+    text-align: center
+    margin: -20px
+    .footer-action--buy-now
+      padding: 10px 65px
+      background: #ff7f0e
+      color: white
+      font-weight: 100
+      border-radius: 18px
+  .copyright
+    margin-top: 115px
+    text-align: center
+    font-size: 16px
+    +respond_to(xs)
+      margin-top: 30px
+  .links
+    margin-top: 60px
+    +respond_to(xs)
+      margin-top: 30px
+    font-weight: 100
+    .footer-links
+      padding: 0
+      list-style-type: none
+      font-size: 18px
+      line-height: 24px
+      .footer-link
+        color: #aaa
+  .footer-social-icons
+    font-size: 40px
+    padding-top: 8px
+    +respond_to(xs)
+      font-size: 20px
+  .footer-social-icon
+    color: white
+    text-decoration: none
+.fb-post
+  margin-bottom: 15px
+
+.games
+  hr
+    margin-top: 60px
+.stories
+  margin: 30px 0 30px 0
+  video
+    width: 100%
+img.video-app
+  width: 100%
+  cursor: pointer
+
+.video-modal
+  .close-text
+    z-index: 102
+  .close
+    z-index: 102
+    cursor: pointer
+    position: absolute
+    top: 20px
+    right: 20px
+  video
+    width: 100%
+  z-index: 101
+  background-color: rgba(0,0,0,0.7)
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+
+.media-left, .media-body
+  display: table-cell
+  vertical-align: top
+.media-left
+  padding-right: 10px
+.media-body p
+  +respond_to(xs)
+    margin-right: 20px
+
+.ashley
+  .circle
+    cursor: pointer
+    +respond_to(xs)
+      text-align: center
+      margin-top: 30px
+    img
+      +respond_to(xs)
+        width: 100%
+  padding: 30px 0 30px 0
+  background-color: #2b2c3a
+  color: #fff
+  button
+    margin-top: 20px
+    width: 280px
+    font-size: 18px
+    background-color: #4e545f
+  p
+    font-weight: 400
+    color: #fff
+  hr
+    margin-top: 20px
+    margin-bottom: 50px
+    width: 100px
+    height: 3px
+    color: #4caf48
+    background-color: #4caf48
+    border: none
+  strong
+    color: #4caf48
+.phone
+  color: #fff
+  a
+    color: #fff
+.modal-open
+  position: fixed
+
+html,body
+  -webkit-overflow-scrolling: touch !important
+  overflow: auto !important
+  height: 100% !important
+
+img.case
+  width: 120px
+  margin-right: 20px
+  margin-bottom: 20px
+  float: left
+
+a.nothanks
+  cursor: pointer
+  display: inline-block
+  margin: 20px 0 20px
+
+.innerModal
+  margin: 0 10px
+  overflow: hidden

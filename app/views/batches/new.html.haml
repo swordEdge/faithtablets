@@ -1,0 +1,11 @@
+%h2 Charge Batch of Customers
+
+=form_tag batches_path do
+  %p
+    %h3 Amount to charge in <u>cents</u>:
+    =text_field_tag :cents
+  %p
+    %h3 List of Customer IDs, <u>one per line</u>:
+    =text_area_tag :ids, nil, cols: 50, rows: 30
+  %p
+    =submit_tag 'Charge Now'

@@ -1,0 +1,14 @@
+@import "mixins/respond_to"
+
+.hero
+  .content
+    background: #fff image-url('pp-hero-large.jpg') center top no-repeat
+    background-size: cover
+    color: #fff
+    +respond_to(xs)
+      background: none
+
+  .kid
+    background: #fff image-url('pp-hero-xs.jpg') center top no-repeat
+    background-size: cover
+    height: 400px

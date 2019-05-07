@@ -1,0 +1,99 @@
+W, [2018-11-15T19:09:12.296991 #29542]  WARN -- : ** [Bugsnag] No API key configured, couldn't notify
+W, [2018-11-15T19:53:38.476601 #30325]  WARN -- : ** [Bugsnag] No API key configured, couldn't notify
+I, [2018-11-15T20:00:01.930640 #30455]  INFO -- : Processing by PagesController#home as HTML
+I, [2018-11-15T20:00:02.258690 #30455]  INFO -- :   Rendered pages/home.html.haml within layouts/application (148.4ms)
+I, [2018-11-15T20:00:02.383932 #30455]  INFO -- : Completed 200 OK in 419ms (Views: 331.0ms | ActiveRecord: 8.5ms)
+I, [2018-11-15T20:18:36.832923 #48277]  INFO -- : Processing by PagesController#home as HTML
+I, [2018-11-15T20:18:37.122686 #48277]  INFO -- :   Rendered pages/home.html.haml within layouts/application (139.8ms)
+I, [2018-11-15T20:18:37.259846 #48277]  INFO -- : Completed 200 OK in 414ms (Views: 346.2ms | ActiveRecord: 9.2ms)
+I, [2018-11-15T20:22:39.930520 #48508]  INFO -- : Processing by PagesController#home as HTML
+I, [2018-11-15T20:22:40.177810 #48508]  INFO -- :   Rendered pages/home.html.haml within layouts/application (124.5ms)
+I, [2018-11-15T20:22:40.308580 #48508]  INFO -- : Completed 200 OK in 362ms (Views: 297.5ms | ActiveRecord: 7.8ms)
+W, [2018-11-15T20:41:12.975809 #65714]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T20:42:59.649189 #65748]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:13:03.301772 #68845]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:14:43.497050 #68881]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:15:17.682966 #68899]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:34:48.225387 #69737]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:36:25.513882 #69770]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:36:45.939527 #69784]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:39:07.076690 #69841]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:41:21.647245 #69888]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:41:45.290599 #69899]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:43:20.809643 #69930]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:43:47.280573 #69943]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:45:06.876930 #69969]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:45:35.321153 #69984]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:46:20.907012 #70002]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:47:31.559280 #70027]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T22:47:59.756718 #70040]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:00:43.438464 #70273]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:02:26.496924 #70321]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:08:02.174451 #70420]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:08:47.774409 #70437]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:09:22.976561 #70449]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:09:41.699827 #70461]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:11:08.504910 #70488]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:39:35.414559 #70899]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:39:52.506534 #70907]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:40:17.833845 #70918]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:41:11.743842 #70938]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:58:14.178321 #71442]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:59:05.684979 #71454]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:59:16.559052 #71459]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-15T23:59:43.503931 #71466]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:00:04.699802 #71472]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:00:29.417338 #71480]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:21:30.537111 #71899]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:21:58.569730 #71915]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:23:10.866808 #72078]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:23:29.433900 #72088]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:30:38.637421 #72220]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:31:29.528522 #72241]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:50:05.325631 #72700]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:51:57.764652 #72739]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:53:44.652759 #72775]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:56:17.688421 #72836]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T00:59:26.666632 #72967]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T01:07:39.142108 #73480]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T01:12:15.747754 #73584]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T01:12:56.013394 #73602]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T01:14:09.527424 #73627]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T01:14:27.963922 #73636]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T01:14:42.313202 #73643]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T01:27:57.238379 #73916]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T01:32:26.616331 #74019]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T04:46:41.484076 #77632]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T05:02:01.749190 #77921]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T05:07:16.219797 #78024]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T05:35:03.961463 #78688]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T06:27:38.574854 #79623]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T12:17:45.286360 #85900]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T12:22:08.752777 #85987]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T12:27:14.609956 #86870]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T12:39:55.992947 #87096]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-16T12:45:48.599344 #87214]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T02:43:21.623787 #3636]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T02:45:20.526991 #3687]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T02:46:28.272614 #3719]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T02:47:53.186872 #3759]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T02:48:32.614469 #3783]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T03:07:04.986170 #4133]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T03:09:47.933388 #4192]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T03:11:37.170159 #4235]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T03:13:19.167383 #4275]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T03:15:17.126632 #4322]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T05:45:45.015935 #8769]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T05:52:09.892661 #8903]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T05:59:17.511112 #9080]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T06:10:56.322739 #9433]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T06:18:29.534001 #9601]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T06:19:25.297663 #9628]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T06:22:15.162672 #9690]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T06:23:05.600484 #9721]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T06:27:23.986492 #9819]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T06:35:44.661680 #10279]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T06:38:26.423777 #10515]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-17T07:10:48.053383 #10936]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-19T23:28:15.089020 #40429]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent
+W, [2018-11-21T01:15:12.489463 #65662]  WARN -- [Bugsnag]: No valid API key has been set, notifications will not be sent

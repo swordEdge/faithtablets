@@ -1,0 +1,323 @@
+!!!
+%html{lang: "en"}
+  %head
+    %title Faith Tablet - Christian Tablet for Kids
+    %meta{ name: 'viewport', content: 'width=device-width, user-scalable=no' }
+    =stylesheet_link_tag :application
+    =stylesheet_link_tag "#{@content[:prefix]}-overrides"
+    =stylesheet_link_tag "//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css"
+    =javascript_include_tag '//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js'
+
+    =javascript_include_tag '//js.recurly.com/v3/recurly.js'
+    =javascript_include_tag :application
+
+    :javascript
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '381411902041281');
+      fbq('track', 'PageView');
+
+  %body{class: "#{controller_path} #{action_name} #{controller_path}-#{action_name}", "ng-app" => true, "ng-controller" => "CheckoutCtrl"}
+    :javascript
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '2067486766866531',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v2.12'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    %div{class: "fb-customerchat", page_id: "1815744262030704", logged_in_greeting: "Hi! Do you have any questions?", logged_out_greeting: "Hi! Do you have any questions?" }
+    %nav.navbar.navbar-default{:role => "navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle.collapsed{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          / = link_to image_tag("#{@content[:prefix]}-logo-name.png"), '/'
+          = link_to image_tag("//cdn.shopify.com/s/files/1/0073/8803/7209/files/FaithTablet_Green_300x90.png?v=1540949866", style: 'height: 70px'), '/'
+        .navbar-collapse.collapse
+          .nav.navbar-nav.navbar-right.buttons.hidden-xs
+            .call-now
+              %strong Call Now
+              (951) 290-2798
+            %button.buy-now.btn.btn-primary.hidden-sm{ 'ng-click' => "buyTablet('#{@content[:slug]}')" } Buy Now
+          %ul.nav.navbar-nav.navbar-right
+            %li= link_to 'OneVoice', '#one_voice'
+            %li= link_to 'Social Stories', '#social_stories'
+            %li= link_to 'Games', '#games'
+            %li= link_to 'Tablet', '#tablet'
+
+    = yield
+
+    %footer.footer
+      .container
+        .row.phone
+          .col-xs-12.visible-xs
+            %h3.text-center Questions?
+            %h1.text-center
+              %a(href="tel:9512902798")
+                / 888-910-4668
+                (951) 290-2798
+        .row.links
+          .col-xs-6.col-sm-4
+            / = link_to image_tag("#{@content[:prefix]}-logo-white.png"), '/'
+            = link_to image_tag("//cdn.shopify.com/s/files/1/0073/8803/7209/t/2/assets/logo.png?1206813030735335908", style:'height: 70px'), '/'
+
+          .col-sm-2.hidden-xs
+            %ul.footer-links
+              %li= link_to 'Home', '', class: 'footer-link'
+              %li
+                %a.footer-link{ href: '#', 'data-toggle' => 'modal', 'data-target' => '#checkoutModal' } Buy Now
+
+          .col-sm-3.hidden-xs
+            %ul.footer-links
+              %li= link_to 'Terms & Conditions', terms_path, class: 'footer-link'
+              %li= link_to 'Privacy Policy', privacy_path, class: 'footer-link'
+
+          .col-xs-6.col-sm-3.text-right.footer-social-icons
+            %a.symbol.footer-social-icon{ title: "circlefacebook", href: "https://www.facebook.com/specialneedstablet" }
+
+        .row.copyright
+          / &copy; Helping Hands Puzzle Piece, All rights reserved
+          &copy; 2018. All rights reserved.
+
+    #checkoutModal.modal{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1", 'ng-class' => '{ processing: processing }' }
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %button.close{ type: "button", 'ng-click' => "hideModal()" }
+              %span{ 'aria-hidden' => true } &times;
+            .row{ 'ng-hide' => 'step === 4 || step === 5 || step === 6' }
+              .step-tab{ 'ng-class' => '{ active: step === 1, selectable: false }', 'ng-click' => 'selectStep($event, 1)' }
+                .hidden-xs Step
+                .step-number 1
+              .step-tab{ 'ng-class' => '{ active: step === 2, selectable: stepComplete(1) }', 'ng-click' => 'selectStep($event, 2)' }
+                .hidden-xs Step
+                .step-number 2
+              .step-tab{ 'ng-class' => '{ active: step === 3, selectable: stepComplete(2) }', 'ng-click' => 'selectStep($event, 3)' }
+                .hidden-xs Step
+                .step-number 3
+          %form#checkout.modal-body
+            -##qualification{ 'ng-show' => 'step === 1' }
+              .step-heading Is #{@content[:name]} Right For You?
+              %fieldset
+                %h4 What gender is your child or children?
+                %ul
+                  %li
+                    %span.round
+                      %input{ type: 'checkbox', id: 'boy', 'ng-model' => 'boy' }
+                      %label{for: 'boy' }
+                    %span.name Boy
+                  %li
+                    %span.round
+                      %input{ type: 'checkbox', id: 'girl', 'ng-model' => 'girl' }
+                      %label{for: 'girl' }
+                    %span.name Girl
+              %fieldset
+                %h4 Choose their age or ages:
+                %ul
+                  %li
+                    %span.round
+                      %input{ type: 'checkbox', id: 'age0to6', 'ng-model' => 'age0to6' }
+                      %label{for: 'age0to6' }
+                    %span.name 0 to 6
+                  %li
+                    %span.round
+                      %input{ type: 'checkbox', id: 'age7to9', 'ng-model' => 'age7to9' }
+                      %label{for: 'age7to9' }
+                    %span.name 7 to 9
+                  %li
+                    %span.round
+                      %input{ type: 'checkbox', id: 'age10to13', 'ng-model' => 'age10to13' }
+                      %label{for: 'age10to13' }
+                    %span.name 10 to 13
+                  %li
+                    %span.round
+                      %input{ type: 'checkbox', id: 'age14plus', 'ng-model' => 'age14plus' }
+                      %label{for: 'age14plus' }
+                    %span.name 14+
+              %fieldset
+                %h4 Mark the issues your children struggle with:
+                %ul
+                  %li
+                    %span.round
+                      %input{ type: 'checkbox', id: 'coping', 'ng-model' => 'coping' }
+                      %label{for: 'coping' }
+                    %span.name Coping with Bullying
+                  %li
+                    %span.round
+                      %input{ type: 'checkbox', id: 'handling', 'ng-model' => 'handling' }
+                      %label{for: 'handling' }
+                    %span.name Handling Changes
+                  %li
+                    %span.round
+                      %input{ type: 'checkbox', id: 'managing', 'ng-model' => 'managing' }
+                      %label{for: 'managing' }
+                    %span.name Managing Emotions
+                  %li
+                    %span.round
+                      %input{ type: 'checkbox', id: 'following', 'ng-model' => 'following' }
+                      %label{for: 'following' }
+                    %span.name Following Daily Routines
+                  %li
+                    %span.round
+                      %input{ type: 'checkbox', id: 'other', 'ng-model' => 'other' }
+                      %label{for: 'other' }
+                    %span.name Other Routine Struggles
+              %button.next{ 'ng-click' => 'step = 2', 'ng-disabled' => '!stepComplete(1)' } Next
+            #shipping{ 'ng-show' => 'step === 2' }
+              .step-heading Congratulations!
+              %fieldset
+                %p We believe #{@content[:name]} tablet could benefit your child with these development stuggles. Please tell us where to ship your tablet:
+                %input.inline{ type: 'text', placeholder: 'First Name', 'ng-model' => 'first_name', autocomplete: 'given-name', 'data-recurly' => 'first_name'  }
+                %input.inline{ type: 'text', placeholder: 'Last Name', 'ng-model' => 'last_name', autocomplete: 'family-name', 'data-recurly' => 'last_name'  }
+                %input{ type: 'email', placeholder: 'Email', 'ng-model' => 'email', autocomplete: 'email' }
+                %input{ type: 'text', placeholder: 'Phone', 'ng-model' => 'phone', autocomplete: 'tel' }
+                %br
+                %input{ type: 'text', placeholder: 'Address', 'ng-model' => 'address', autocomplete: 'street-address, address-line1' }
+                %input{ type: 'text', placeholder: 'City', 'ng-model' => 'city', autocomplete: 'city' }
+                %input.inline{ type: 'text', placeholder: 'State', 'ng-model' => 'state', autocomplete: 'state' }
+                %input.inline{ type: 'text', placeholder: 'Zip', 'ng-model' => 'zip', autocomplete: 'zip' }
+              %button.next{ 'ng-click' => 'saveContact();', 'ng-disabled' => '!stepComplete(2)' } Next
+            #payment{ 'ng-show' => 'step === 3' }
+              .alert.alert-danger{ 'ng-show' => 'errors' }
+                %ul.errors
+                  %li{ 'ng-repeat' => 'error in errors' } {{ error }}
+                %button.btn.btn-primary.try-again{ 'ng-click' => 'tryAgain()'} Try Again
+              .step-heading Payment
+              %table.summary
+                %tr
+                  %th{ colspan: 3 } Order Summary
+                %tr
+                  %td.name Tablet
+                  %td.qty QTY 1
+                  %td.price <strike>$70</strike> FREE
+                %tr
+                  %td.name Monthly App Packages
+                  %td.qty QTY 1
+                  %td.price {{ subPrice() | currency }}
+                %tr
+                  %td.note{colspan: 3}
+                    If you're not satisfied after 2 months, you can cancel and keep the tablet!
+                %tr
+                  %td.name Shipping
+                  %td.qty
+                  %td.price {{ shippingPrice() | currency }}
+                %tr.total
+                  %td{ colspan: 3}
+                    %input#coupon.coupon.inline{ type: 'text', 'ng-model' => 'coupon_code', placeholder: 'Coupon' }
+                    %p Total: {{ totalPrice() | currency }}
+              %fieldset
+                %input.cc-number{ type: 'text', placeholder: 'Card Number', 'ng-model' => 'card_number', autocomplete: 'cc-number', pattern: '\d*', 'data-recurly' => 'number' }
+                Month
+                %select#month.inline{ 'data-recurly' => 'month', 'ng-model' => 'card_expire_month' }
+                  %option 01
+                  %option 02
+                  %option 03
+                  %option 04
+                  %option 05
+                  %option 06
+                  %option 07
+                  %option 08
+                  %option 09
+                  %option 10
+                  %option 11
+                  %option 12
+                Year
+                %select#year.inline{ 'data-recurly' => 'year', 'ng-model' => 'card_expire_year' }
+                  %option 2018
+                  %option 2019
+                  %option 2020
+                  %option 2021
+                  %option 2022
+                  %option 2023
+                  %option 2024
+                  %option 2025
+                  %option 2026
+                  %option 2027
+                  %option 2028
+                %input.cc-cvc.inline{ type: 'text', placeholder: 'CVC', 'ng-model' => 'card_cvc', 'data-recurly' => 'cvv', style: 'width: 150px;' }
+              %button.next{ 'ng-click' => 'done()', 'ng-disabled' => '!stepComplete(3) || processing' } Done
+            #success{ 'ng-show' => 'step === 4' }
+              .step-heading Thank you for your purchase!
+              .innerModal
+                =image_tag('case.png', class: 'case')
+                %p
+                  Your order is confirmed!  Shipping of tablets typically takes 14-21 business days.
+                  Would you like to <strong>eliminate monthly payments</strong> and upgrade your order with this one-time offer?
+                  If you have any questions, or to cancel, please call our friendly customer service at 888-910-4668.
+                %h3 Save $100 and get a free case and faster shipping:
+              %table.summary.clear
+                %tr
+                  %th{ colspan: 3 } A Special Offer For You:
+                %tr
+                  %td.name Heavy Duty Case with Kickstand
+                  %td.qty
+                  %td.price $24.99
+                %tr
+                  %td.name Next Day Shipping
+                  %td.qty
+                  %td.price $14.99
+                %tr
+                  %td.name Pro Version Upgrade: Automated Homework Assignments
+                  %td.qty
+                  %td.price $59.99
+                %tr
+                  %td.name 5 additional months of access to our state-of-the art learning software
+                  %td.qty
+                  %td.price $99.95
+                %tr
+                  %td{ colspan: 3, style: 'text-align: right;'} <strong><strike>$199.92 value</strike></strong>
+                %tr
+                  %td{ colspan: 3, style: 'text-align: right;'} <strong>$99.97 discount</strong>
+                %tr.total
+                  %td{ colspan: 3}
+                    %p Total: $99.95
+              %div{'style' => 'text-align: center;'}
+                %button.next{ 'ng-click' => 'upgrade()', style: 'display: inline-block; margin-right: 20px;' } Upgrade Now
+                %a.nothanks{'ng-click' => 'step = 6' } No thanks.
+            #success{ 'ng-show' => 'step === 5' }
+              .step-heading Thank you for upgrading!
+              .innerModal
+                %p
+                  Your upgrade is confirmed! You will receive an email notification.
+            #success{ 'ng-show' => 'step === 6' }
+              .step-heading Thanks again for purchasing!
+              .innerModal
+                %p
+                  Your order is confirmed!  Shipping of tablets typically takes 14-21 business days.
+                  If you have any questions, or to cancel, please call our friendly customer service at 888-910-4668.
+
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49753668-1', 'getpuzzlepiece.com');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+      window.ga = ga;
+
+      $(function() {
+        recurly.configure({ publicKey: '#{AppEnv.send(@content[:prefix] + "_recurly_js_private_key")}' });
+      });
+
+  .modal-backdrop.in{style: 'display: none;'}

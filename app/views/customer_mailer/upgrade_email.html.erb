@@ -1,0 +1,19 @@
+<%= image_tag attachments['logo.png'].url %>
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">Dear <%= @customer.first_name %>,</p>
+<h1 style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 36px; line-height: 1.2; color: #000; font-weight: 200; margin: 40px 0 10px; padding: 0;">Thank You For Upgrading!</h1>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  Thank you again for upgrading your <%= @content[:name] %> order! You will now be receiving a free case, next day shipping, and an upgraded version of our software.
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  You have signed up for 6 months of our Pro Version Software, at the end of 6 months if you choose not to continue with our software, please call us at 888-910-4668. If you do not call in and cancel, your subscription will be automatically renewed.
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  Sincerely,
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  The <%= @content[:name] %> Family<br>
+</p>

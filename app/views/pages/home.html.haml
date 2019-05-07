@@ -1,0 +1,207 @@
+.video-modal(ng-show = 'showVideo == true')
+  %span.close.glyphicon.glyphicon-remove(ng-click = "playVideo(false)")
+  .embed-responsive.embed-responsive-16by9(ng-show = 'showOverview == true')
+    %video#overview.embed-responsive-item(controls)
+      %source(type="video/mp4" src="//puzzle-piece-videos.s3.amazonaws.com/overview.mp4")
+  .embed-responsive.embed-responsive-16by9(ng-show = 'showSample == true')
+    %video#sample.embed-responsive-item(controls)
+      %source(type="video/mp4" src="//puzzle-piece-videos.s3.amazonaws.com/winter-clothes/video.mp4")
+  .embed-responsive.embed-responsive-16by9(ng-show = 'showAshley == true')
+    %video#ashley.embed-responsive-item(controls)
+      %source(type="video/mp4" src="//puzzle-piece-videos.s3.amazonaws.com/ashley.mp4")
+  .col-xs-12.close-text.text-center.visible-xs
+    %button.btn.btn-primary.watch(ng-click = 'playVideo(false)')
+      %span.glyphicon.glyphicon-remove
+      Close Video
+
+%section.hero
+  .container
+    .row.content
+      .col-sm-5.hidden-xs.father
+        / %h1 Free Android #{@content[:disorder]} Tablet
+        / %p Join #{@content[:name]} and get a 7" Amazon Fire tablet for FREE and access to 120+ #{@content[:disorder]} Apps with new apps added every month for only $29/month.
+        / %p Try for 2 months, then cancel anytime.
+        %h1 It's like Netflix for APPS!
+        %p Join Faith Tablet and get access to 80+ Christian and Bible Themed Apps with new apps added every month for only $9.99 a MONTH!
+        %p Try for 2 months, then cancel anytime.
+        %button.buy-now.btn.btn-primary{ 'ng-click' => "buyTablet('#{@content[:slug]}')" } Buy Now
+      .col-xs-10.col-xs-offset-1.hidden-sm.hidden-md.hidden-lg.text-center
+        %h1 It's like Netflix for APPS!
+        %p Join Faith Tablet and get access to 80+ Christian and Bible Themed Apps with new apps added every month for only $9.99 a MONTH!
+        %p Try for 2 months, then cancel anytime.
+      .col-xs-12.hidden-sm.hidden-md.hidden-lg.kid.text-center
+        .col-xs-12
+          %button.buy-now.btn.btn-primary{ 'ng-click' => "buyTablet('#{@content[:slug]}')" } Buy Now
+        - if @content[:slug] == 'puzzlepiece'
+          .col-xs-12
+
+%section.accolades
+  .container
+    .row
+      %blockquote
+        / "An expert panel of judges awarded <strong>first-prize to #{@content[:name]} </strong>, a tablet preloaded with visual social stories that families can personalize."
+        Faith Tablet <strong>teaches children the values God wants</strong> our children to know while rewarding them for learning."
+%section.social_stories.apps
+  %a.offset#social_stories
+  .container
+    .row
+      .col-xs-12.text-center
+        %h2 Tackle tough issues with our 80+ Social Story apps
+        %p We've created stories that will relate to your child to help teach them various real life values as the bible teaches them.
+      .col-xs-12
+        %ul
+          %li
+            =icon_tag :soap
+            Accepting Christ
+          %li
+            =icon_tag :meeting
+            %label Accountability
+          %li
+            =icon_tag 'regular-biking'
+            %label Bad Influences
+          %li
+            =icon_tag :football2
+            %label Bullying
+          %li
+            =icon_tag :tooth
+            %label Daily Routine
+          %li
+            =icon_tag :talk
+            %label Doing What’s Right
+          %li
+            =icon_tag :cars
+            %label Friendships
+          %li
+            =icon_tag :shop
+            %label Gifts & Talents
+          %li
+            =icon_tag 'vegetarian-food'
+            %label God’s Direction
+          %li
+            =icon_tag :hand
+            %label God’s Faithfulness
+          %li
+            =icon_tag :puzzle
+            %label God’s Plan
+          %li
+            =icon_tag :bandage
+            %label Reflecting Jesus
+          %li
+            =icon_tag 'toilet-pan'
+            %label Patience
+          %li
+            =icon_tag :rules
+            %label Prayer
+          %li
+            =icon_tag :calendar
+            %label Following Rules
+          %li
+            =icon_tag :fish
+            %label Suffering
+          %li
+            =icon_tag :school
+            %label Talking To God
+          %li
+            =icon_tag :trophy
+            %label Temptation
+          %li
+            =icon_tag 'high-priority'
+            %label Washing Away Sin
+          %li
+            =icon_tag 'more'
+            %label And more!
+      .col-xs-12
+        %hr
+
+%section.non_verbal.apps
+  %a.offset#one_voice
+  .container
+    .row#video
+      .col-md-6.col-xs-12.visible-xs
+        =image_tag 'one-voice-tablet.png', class: 'tablet'
+      .col-md-6.col-xs-12
+        / %h2 Non Verbal #{@content[:disorder]} Apps
+        %h2 Homework For Your Child
+        / %p Giving a voice to those who need it most.
+        %p It's simple. We assign 3 stories every day to your son or daughter, total time to complete is 15 minutes. You can then reward them with screen time and/or new games.
+        .row.app-icons
+          .col-xs-12
+            .media
+              .media-left
+                =icon_tag 'high-volume'
+              .media-body
+                %h4 Social Story Apps
+                %p Your child is assigned three lessons per day that tackles issues all children face growing up. The stories can either be read by the app to your child or they can choose to read it themself. It helps with reading too!
+            .media
+              .media-left
+                =icon_tag :happy
+              .media-body
+                %h4 Parent Notification
+                %p Our app notifies you when the child has completed their daily homework, allowing you the peace of mind they completed their 10-15 min of daily bread, and allows you to reward them with screen time or maybe some free game apps from the app store or YouTube time :)
+        %button.buy-now.btn.btn-primary{ 'ng-click' => "buyTablet('#{@content[:slug]}')" } Buy Now
+      .col-md-6.col-xs-12.hidden-xs
+        =image_tag '//cdn.shopify.com/s/files/1/0073/8803/7209/files/story_660x440.png?v=1541615439', class: 'tablet'
+      .col-xs-12
+        %hr
+
+%section.games
+  %a.offset#games
+  .container
+    .row
+      .col-xs-12.text-center
+        %h2 40+ Games
+        / %p There are over 40 ad-free games in the #{@content[:name]} library.
+        %p There are over 40 ad-free games in the Faith Tablet library.
+        %p Games can be used as rewards and will keep your child engaged for hours.
+    .row
+      .col-md-6.col-xs-12.text-center
+        = image_tag 'games.jpg', class: 'main'
+      .col-md-6.col-xs-12
+        .row.app-icons
+          .col-xs-12
+            = image_tag 'game-icons.png', class: 'game-icons'
+          .col-xs-12
+            .media
+              .media-left
+                =icon_tag :close
+              .media-body
+                %h4 Ad Free
+                %p Reward games never have any ads for your child to click on or distractions that pull the child out of the game like typical free apps.
+            .media
+              .media-left
+                =icon_tag :children
+              .media-body
+                %h4 Kid Safe
+                %p No more having to worry if your child will download something that you don’t approve of or be subject to offensive content.
+            .media
+              .media-left
+                =icon_tag :hearts
+              .media-body
+                %h4 No In App Purchases
+                %p We never ask for additional purchases at any stage of the game, we keep our system affordable and budget friendly.
+        %button.buy-now.btn.btn-primary{ 'ng-click' => "buyTablet('#{@content[:slug]}')" } Buy Now
+      .col-xs-12
+        %hr
+
+%section.tablet-details
+  %a.offset#tablet
+  .container
+    .row.content
+      .row
+        .col-xs-12
+          / %h2 #{@content[:name]} Tablet
+          %h2 Faith Christian Tablet
+          %hr
+      .row
+        .col-xs-12.col-md-4.column
+          %h4 Details
+          %p 7" Android tablet.
+        .col-xs-12.col-md-4.column
+          %h4 Camera
+          %p Front and rear facing cameras for easy picture taking.
+        .col-xs-12.col-md-4.column
+          %h4 Storage
+          %p Comes with plenty of storage for apps, music and photos.
+      .row.relative
+        .col-xs-12.text-center
+          %button.buy-now.btn.btn-primary{ 'ng-click' => "buyTablet('#{@content[:slug]}')" } Buy Now

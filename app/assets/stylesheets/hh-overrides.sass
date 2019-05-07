@@ -1,0 +1,29 @@
+@import "mixins/respond_to"
+
+.hero
+  .content
+    background: #fff image-url('hh-hero-large.jpg') center top no-repeat
+    background-size: cover
+    color: #fff
+    +respond_to(xs)
+      background: none
+
+  .kid
+    background: #fff image-url('hh-hero-xs.jpg') center top no-repeat
+    background-size: cover
+    padding-top: 50px
+    height: 250px
+
+  p
+    color: #fff
+    font-size: 18px
+    line-height: 1.2em
+    margin-bottom: 20px
+    color: #fff
+    +respond_to(xs)
+      color: #57606e
+
+  h1
+    color: #fff
+    +respond_to(xs)
+      color: #57606e

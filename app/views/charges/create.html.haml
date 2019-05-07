@@ -1,0 +1,42 @@
+%section
+  .container
+    .row
+      .col-sm-12
+        - if @success
+          %h1 Success! You have been billed $39.90
+          %p
+            You will receive an email with shipping information within 5 Business Days. If you have any questions at all email us at
+            = mail_to 'hello@gethelpinghands.com'
+            or call us at 888-910-4668.
+        - else
+          %h1 There was a problem billing your card
+          %p
+            Please go back and try again. If you have any questions at all email us at
+            = mail_to 'hello@gethelpinghands.com'
+            or call us at 888-910-4668.
+
+- if @success
+  - if AppEnv.track_conversions?
+    / Facebook Conversion Code for Puzzle Piece
+    :javascript
+      var fb_param = {};
+      fb_param.pixel_id = '6016966849463';
+      fb_param.value = '0.00';
+      fb_param.currency = 'USD';
+      (function(){
+        var fpw = document.createElement('script');
+        fpw.async = true;
+        fpw.src = '//connect.facebook.net/en_US/fp.js';
+        var ref = document.getElementsByTagName('script')[0];
+        ref.parentNode.insertBefore(fpw, ref);
+      })();
+
+  %noscript
+    %img{:alt => "", :height => "1", :src => "https://www.facebook.com/offsite_event.php?id=6016966849463&amp;value=0&amp;currency=USD", :style => "display:none", :width => "1"}/
+  :javascript
+    var $mcGoal = {'settings':{'uuid':'c3a3846c6f6024f3a565b6904','dc':'us2'}};
+    (function() {
+       var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+      sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+    })();

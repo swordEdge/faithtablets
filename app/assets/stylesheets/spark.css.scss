@@ -1,0 +1,65 @@
+body {
+  font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
+  background-color: #f2f2f2;
+}
+.navbar-inverse {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #1c1817;
+  .navbar-nav {
+    text-align: center;
+    float: none;
+    li {
+      float: none;
+      display: inline-block;
+      a {
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: #fff;
+        text-transform: uppercase;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+label {
+  font-weight: 400;
+}
+
+.form-control {
+  font-size: 14px;
+  padding: 12px;
+  margin: 6px 0 4px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  line-height: normal;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+header {
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(32,23,19,.7);
+    z-index: 0;
+  }
+  position: relative;
+  background-image: image-url('desk.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 20px 0;
+  img {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    z-index: 10;
+  }
+}

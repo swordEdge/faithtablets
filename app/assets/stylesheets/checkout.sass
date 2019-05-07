@@ -1,0 +1,318 @@
+#checkoutModal
+  button.close
+    position: absolute
+    top: 0
+    right: 5px
+    font-size: 32px
+  button.next
+    background: transparent
+    border: 3px solid #4caf48
+    border-radius: 24px
+    color: #677080
+    display: block
+    font-family: 'Open Sans', sans-serif
+    font-size: 18px
+    margin: 30px auto
+    width: 140px
+    padding: 15px 0
+    text-align: center
+  button[disabled]
+    border: 3px solid #eaeaea
+    color: #eaeaea
+  fieldset
+    margin: 0 auto
+    padding: 0
+    width: 400px
+    +respond_to(xs)
+      width: 300px
+  input[type='text'], input[type='email']
+    border: 1px solid #c3c3c5
+    border-radius: 0
+    display: block
+    width: 400px
+    margin-top: 10px
+    padding: 10px 5px
+    -moz-appearance: none
+    -webkit-appearance: none
+    appearance: none
+    +respond_to(xs)
+      width: 300px
+  input.inline
+    display: inline-block
+    width: 195px
+    +respond_to(xs)
+      width: 145px
+  input.inline + input.inline
+    margin-left: 5px
+  +respond_to(xs)
+    .modal-dialog
+      margin: 0
+    .modal-body
+      padding: 0
+    button.next
+      background: #4caf48
+      border: 0
+      border-radius: 0
+      color: #fff
+      display: block
+      font-family: 'Lilita One', sans-serif
+      font-size: 32px
+      font-weight: normal
+      margin: 30px auto 0
+      width: 100%
+      padding: 20px 0
+      text-align: center
+    button[disabled]
+      background: #eaeaea
+      border: 0
+      color: #fff
+
+.modal-content
+  border: 0
+  border-radius: 0
+  box-shadow: none
+
+.modal-header
+  border: 0
+  padding: 0
+  .row
+    margin: 0
+
+.step-tab
+  background: #eaeaea
+  color: #666b74
+  font-family: 'Lilita One', sans-serif
+  font-size: 18px
+  text-align: center
+  padding: 10px 0
+  width: 34%
+  float: left
+  .hidden-xs
+    display: inline
+  +respond_to(xs)
+    // text-align: left;
+    // display: none;
+
+.step-tab + .step-tab
+  width: 33%
+
+.step-tab.active
+  background: #f6a71b
+  color: #fff
+  display: block
+
+.step-tab.selectable
+  cursor: pointer
+
+.step-number
+  background: #f5f5f5
+  border-radius: 24px
+  display: inline-block
+  margin-right: 10px
+  width: 24px
+  height: 24px
+  line-height: 24px
+  text-align: center
+
+.step-tab.active .step-number
+  color: #f6a71b
+
+.step-heading
+  color: #3d3d4a
+  font-family: 'Open Sans', sans-serif
+  font-size: 30px
+  font-weight: 200
+  margin: 15px 0 30px
+  text-align: center
+  +respond_to(xs)
+    font-size: 28px
+    margin: 20px 0
+
+.cover
+  +respond_to(xs)
+    font-size: 14px
+
+.clear
+  margin-bottom: 10px
+  clear: both
+
+.add
+  clear: both
+  display: block
+  text-align: center
+  margin-top: 20px
+
+.number
+  width: 70px
+  +respond_to(xs)
+    padding-left: 10px
+
+.remove
+  text-align: right
+  width: 70px
+  +respond_to(xs)
+    width: 50px
+
+  a
+    cursor: pointer
+    color: #333
+    +respond_to(xs)
+      margin-right: 10px
+  a:hover
+    text-decoration: none
+
+table.covers
+  width: 100%
+  td
+    padding-bottom: 10px
+
+.colors
+  margin: 0 auto
+  font-size: 0
+  line-height: 0
+  text-align: center
+  .color
+    background-position: center center
+    background-repeat: no-repeat
+    border-radius: 80px
+    cursor: pointer
+    display: inline-block
+    width: 80px
+    height: 80px
+  .blue
+    background-color: #23abdd
+  .pink
+    background-color: #ed93e3
+  .green
+    background-color: #4caf48
+  .selected
+    background-image: image-url("checkmark.png")
+  .color + .color
+    margin-left: 5px
+  +respond_to(xs)
+    .color
+      border-radius: 65px
+      width: 65px
+      height: 65px
+
+table.summary
+  background: #eaeaea
+  color: #3d3d4a
+  font-size: 14px
+  margin: 0 auto 10px
+  width: 400px
+  +respond_to(xs)
+    width: 100%
+
+  th
+    font-size: 18px
+    font-weight: normal
+    padding: 20px
+    text-align: center
+  td
+    padding: 0 10px 10px
+  td + td
+    text-align: right
+  tr.total
+    td
+      padding: 0 10px 10px 10px
+      border-top: 1px solid #a8aaaf
+      input#coupon
+        width: 120px
+        float: left
+      p
+        margin: 0
+        font-size: 30px
+        color: #4caf48
+        padding: 0
+        font-weight: bold
+        text-align: right
+
+ul.errors
+  list-style-type: square
+
+.processing *
+  cursor: progress !important
+
+a.tc
+  color: #fff
+
+.try-again
+  display: block
+  margin: 10px auto
+
+#tablet
+  text-align: center
+  h2
+    color: #4ead47
+    margin-bottom: 20px
+    font-size: 36px
+    +respond_to(xs)
+      font-size: 24px
+  h3
+    font-family: 'Open Sans', sans-serif
+    margin-bottom: 20px
+    font-size: 16px
+  img
+    width: 80%
+    margin: 0 auto
+  .buttons
+    margin: 0
+  button.no
+    border-color: #677080
+  button
+    background: transparent
+    border: 3px solid #4caf48
+    border-radius: 24px
+    color: #677080
+    display: inline-block
+    font-family: 'Open Sans', sans-serif
+    font-size: 18px
+    margin: 30px auto
+    width: 140px
+    padding: 15px 0
+    text-align: center
+
+#qualification ul
+  li
+    height: 35px
+  list-style-type: none
+  span.name
+    padding-left: 20px
+
+.round
+  position: relative
+
+.round label
+  background-color: #fff
+  border: 1px solid #ccc
+  border-radius: 50%
+  cursor: pointer
+  height: 28px
+  left: 0
+  position: absolute
+  top: 0
+  width: 28px
+
+.round label:after
+  border: 2px solid #fff
+  border-top: none
+  border-right: none
+  content: ""
+  height: 6px
+  left: 7px
+  opacity: 0
+  position: absolute
+  top: 8px
+  transform: rotate(-45deg)
+  width: 12px
+
+.round input[type="checkbox"]
+  visibility: hidden
+
+.round input[type="checkbox"]:checked + label
+  background-color: #4caf48
+  border-color: #4caf48
+
+.round input[type="checkbox"]:checked + label:after
+  opacity: 1

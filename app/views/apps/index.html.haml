@@ -1,0 +1,18 @@
+.container.content
+  .row
+    %h2 App Center
+
+  .row
+    %p Open this page on your Puzzle Piece tablet. Then simply click the app you want to download and install. It's that easy!
+
+  .row
+    - @apps.each do |app|
+      .app.col-sm-3
+        = link_to app.url do
+          .icon= image_tag app.icon_url
+        %h4= app.name
+        - if app.description.present?
+          .description= app.description
+        = link_to app.url, class: 'btn btn-success' do
+          Download
+          %i.fa.fa-download

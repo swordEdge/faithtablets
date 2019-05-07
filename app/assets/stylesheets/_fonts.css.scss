@@ -1,0 +1,32 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(//fonts.googleapis.com/css?family=Lilita+One);
+
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: font-url('monosocialicons/MonoSocialIconsFont-1.10.eot');
+  src: font-url('monosocialicons/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+       font-url('monosocialicons/MonoSocialIconsFont-1.10.woff') format('woff'),
+       font-url('monosocialicons/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+       font-url('monosocialicons/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  src: font-url('monosocialicons/MonoSocialIconsFont-1.10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.symbol, a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+a.symbol:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%;
+}

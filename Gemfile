@@ -1,0 +1,40 @@
+source 'https://rubygems.org'
+
+ruby '2.5.0'
+
+gem 'activeadmin'
+gem 'activeadmin-sortable'
+gem 'acts_as_list'
+gem 'autoprefixer-rails'
+gem 'bootstrap-sass', '>= 3.2.0.0'
+gem 'bugsnag'
+gem 'coffee-rails', '>= 4.0.0'
+gem 'country_select'
+gem 'creek'
+gem 'dalli'
+gem 'decent_exposure'
+gem 'devise'
+gem 'fog'
+gem 'haml-rails'
+gem 'highcharts-rails'
+gem 'jbuilder', '>= 2.0'
+gem 'jquery-rails'
+gem 'keen'
+gem 'letter_opener', group: [:development]
+gem 'memcachier'
+gem 'pg'
+gem 'phony_rails'
+gem 'pry-rails'
+gem 'puma'
+gem 'rack-cors'
+gem 'rails', '~> 5.2.0'
+gem 'rails_12factor', group: :production
+gem 'recurly'
+gem 'rspec-its', group: [:development, :test]
+gem 'rspec-rails', group: [:development, :test]
+gem 'sass-rails'
+gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sidekiq'
+gem 'sinatra'
+gem 'stamp'
+gem 'uglifier', '>= 1.3.0'

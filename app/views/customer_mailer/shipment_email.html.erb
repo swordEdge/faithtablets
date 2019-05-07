@@ -1,0 +1,74 @@
+<%= image_tag attachments['logo.png'].url %>
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">Dear <%= @shipment.customer.shipping_name %>:</p>
+
+<h1 style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 36px; line-height: 1.2; color: #000; font-weight: 200; margin: 40px 0 10px; padding: 0;">Your <%= @shipment.customer.content[:name] %> tablet has shipped!</h1>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  Thank you for ordering with <%= @shipment.customer.content[:name] %> and becoming part of our family. Your tablet has now shipped via 2-day priority through USPS.
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  Once you receive your tablet, simply visit the links below, and click to download the stories apps and One Voice to your device. In minutes, you can your kids start learning from Social Stories and reward them with Ad Free Games!
+</p>
+
+<h1 style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 24px; line-height: 1.2; color: #000; font-weight: 200; margin: 20px 0 10px; padding: 0;">
+  Social Story Apps:
+</h1>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.6; font-weight: bold; margin: 0 0 10px; padding: 0;">
+  <%= link_to URI.split("#{@content[:base_url]}/apps")[1..-1].compact.join.gsub('www.',''), "#{@content[:base_url]}/apps", style: 'color: #000; text-decoration: none;' %>
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 30px; padding: 0;">
+  <span style="padding: 5px; background-color: #ffff5a; line-height: 5px;">
+    This month's app access code for members is: Tap the boy icon three times.
+  <span>
+</p>
+
+<h1 style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 24px; line-height: 1.2; color: #000; font-weight: 200; margin: 20px 0 10px; padding: 0;">
+  One Voice:
+</h1>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.6; font-weight: bold; margin: 0 0 10px; padding: 0;">
+  <%= link_to URI.split("#{@content[:base_url]}/onevoice")[1..-1].compact.join.gsub('www.',''), "#{@content[:base_url]}/onevoice", style: 'color: #000; text-decoration: none;' %>
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 30px; padding: 0;">
+  <span style="padding: 5px; background-color: #ffff5a; line-height: 5px;">
+    Sign in with your email address to enter the app.
+  <span>
+</p>
+
+<h1 style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 24px; line-height: 1.2; color: #000; font-weight: 200; margin: 20px 0 10px; padding: 0;">
+  Social Story Videos:
+</h1>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.6; font-weight: bold; margin: 0 0 10px; padding: 0;">
+  <%= link_to URI.split("#{@content[:base_url]}/videos")[1..-1].compact.join.gsub('www.',''), "#{@content[:base_url]}/videos", style: 'color: #000; text-decoration: none;' %>
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 30px; padding: 0;">
+  <span style="padding: 5px; background-color: #ffff5a; line-height: 5px;">
+    Sign in with your email address to enter the app.
+  <span>
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  Thanks again and hope you enjoy your tablet!
+</p>
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+  Sincerely,<br>
+  The Puzzle Piece Family
+</p>
+
+<% if @shipment.tracking_number.present? %>
+  <p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+    <a href="<%= @shipment.tracking_url %>"><%= @shipment.tracking_url %></a>
+  </p>
+
+  <p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">
+    Tracking number:<br>
+    <%= @shipment.tracking_number %>
+  </p>
+<% end %>

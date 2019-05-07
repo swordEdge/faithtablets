@@ -1,0 +1,19 @@
+@import "bootstrap/_variables";
+
+@mixin respond_to($target) {
+  @if $target == xs {
+    @media (max-width: $screen-xs-max) { @content }
+  }
+
+  @if $target == sm {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { @content }
+  }
+
+  @if $target == md {
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { @content }
+  }
+
+  @if $target == lg {
+    @media (min-width: $screen-lg-min) { @content }
+  }
+}

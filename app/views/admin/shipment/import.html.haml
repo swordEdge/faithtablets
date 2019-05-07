@@ -1,0 +1,7 @@
+= form_for :dump, url: { action: :upload_file }, html: { multipart: true } do |f|
+  %dl
+    %dt
+      %label{:for => 'dump_file'} Select an XLSX:
+    %dd
+      = f.file_field :file
+      = f.submit 'Submit'

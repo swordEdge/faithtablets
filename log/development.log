@@ -1,0 +1,698 @@
+
+
+Started GET "/" for ::1 at 2018-11-15 19:05:35 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/bootstrap.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/bootstrap.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_color_pallette.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_color_pallette.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_fonts.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_fonts.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/utilities/media_object.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/utilities/media_object.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/layouts/fonts.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/layouts/fonts.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/icon-font.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/icon-font.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/bootstrap.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/bootstrap.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_color_pallette.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_color_pallette.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_fonts.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_fonts.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/utilities/media_object.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/utilities/media_object.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/layouts/fonts.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/layouts/fonts.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/icon-font.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/icon-font.scss. (called from _app_views_pages_home_html_haml__107173546700955004_70243630785560 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+  Rendered pages/home.html.haml within layouts/application (28682.5ms)
+Completed 200 OK in 29459ms (Views: 29365.5ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/assets/application.self-0070659ecc1988538383408d71dea664a89d8f53126c3b076850f3883bda1770.css?body=1" for ::1 at 2018-11-15 19:06:05 +0800
+
+
+Started GET "/assets/pp-overrides.self-fcabfe37fe8bb14220157502322b8a0af2c506b46405aa48ab0d9d4b314c1bf5.css?body=1" for ::1 at 2018-11-15 19:06:05 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/pp-favicon-7ffe72bc470c5c03af31e3667e7ab50d3eda13b9a30976ceff9507cf20194eed.ico" for ::1 at 2018-11-15 19:06:10 +0800
+No valid API key has been set, notifications will not be sent
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE DATABASE "puzzlepiece_development" ENCODING = 'utf8'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "puzzlepiece_test" ENCODING = 'utf8'[0m
+  [1m[35m (47.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7540977551924656875)[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-15 13:39:52.772002"], ["updated_at", "2018-11-15 13:39:52.772002"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7540977551924656875)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+No valid API key has been set, notifications will not be sent
+Started GET "/" for 127.0.0.1 at 2018-11-15 21:41:25 +0800
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/bootstrap.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/bootstrap.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_color_pallette.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_color_pallette.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_fonts.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_fonts.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/utilities/media_object.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/utilities/media_object.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/layouts/fonts.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/layouts/fonts.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/icon-font.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/icon-font.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/bootstrap.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/bootstrap.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_color_pallette.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_color_pallette.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_fonts.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/_fonts.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/utilities/media_object.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/utilities/media_object.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/layouts/fonts.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/layouts/fonts.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/icon-font.css.scss to /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/assets/stylesheets/icon-font.scss. (called from _app_views_pages_home_html_haml___4558718967991564427_70321023498620 at /Volumes/DATA/Development/Rails/untitled folder/puzzlepiece-core/app/views/pages/home.html.haml:20)
+  Rendered pages/home.html.haml within layouts/application (25656.8ms)
+Completed 200 OK in 26352ms (Views: 26287.9ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/assets/application.self-0070659ecc1988538383408d71dea664a89d8f53126c3b076850f3883bda1770.css?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+Started GET "/assets/pp-overrides.self-fcabfe37fe8bb14220157502322b8a0af2c506b46405aa48ab0d9d4b314c1bf5.css?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:52 +0800
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/fastclick.self-e4e2ffd2a5d783b5109d8cf23983c85770fb73ccf235ee5ddcdd0dde29f70cc7.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/version.self-c8e3d1203da26ea7efdf83c1eabb3f0ba55cb68e463f5ccf0d77bd15ce6a8e61.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/keycode.self-ad63cd20acf49dd333bbbc537454d7d475bd610eb5b88de0dca009f0c3d314b1.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/widgets/datepicker.self-2af0dec09da99d687c31fc224e940687a4eb3694e7b38b0871bba475cad86120.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/widget.self-fca20bcec06d192f97cffa6e734e24360e227237b8ae7d7e7e60754df7d5444f.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/widgets/controlgroup.self-0b7409f97114a33de116bd5429e9df199cbdea3f276d8bd725c4c2c60f244711.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/widgets/checkboxradio.self-0b7409f97114a33de116bd5429e9df199cbdea3f276d8bd725c4c2c60f244711.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/widgets/button.self-659b51f6fb5303f90ed8cf551509063770a50168a15795ba834b08f8bf2e0ce0.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/ie.self-163eb039dcb1e0c3471b7d91386eabb8753da6906e84824c019f9ff56bdb83a6.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/widgets/mouse.self-f0790a202dcf54fab051e71b042335d5346f9cceb0f645223c1dab93f349a04b.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/data.self-2067c82e6fe39a9cba5623206a5dc28d5c60d26b95cd100855b78cacf72865b8.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/plugin.self-d8f576c8e073ca51f095505f47bd09d306b875404cd90afcbb6338287cfb0247.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/safe-active-element.self-a1f1a1a7dae3269ce03f6fffb2dcc9b4a7490f5d546c65d54417bec3be24b668.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/safe-blur.self-2cc24c46132d51c7724f6371154241b0a81c9bae5d5681d8f62b01ce46236726.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/scroll-parent.self-38e26a71a450a29fb63425e8f589a7046862f927eb0a1dbf6a6c44da05196d2e.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/widgets/draggable.self-42c3eda0b49f105628cea7580fe38c7ed77467cee384bb2c4e095a2bd0a172e6.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/disable-selection.self-5675f71f2fbbc6857ea700ba843af748b50dbc0150cc87932a7d05ec016bb659.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/widgets/resizable.self-1a46c2f5b876918e02bf979080e56f57846590cd880721bca5058e84f7f60bae.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/focusable.self-426e99e67d1f1bd4cb444fd878ee63a6de1f5d1d61451e43022c86214b9eec64.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/position.self-1b49c8c521e67a4a88bfdad6b4d944d33686d25009a0e40a1e170acdd7b6962a.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/tabbable.self-f3f62ceed772d3a325cebd6a03221f8a8cb02c6150f4feba738c6525a2953690.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/unique-id.self-66e85ac85cd0b6b8b1bb89369fc65f608f716869dc0930862a8d421a57a9580a.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/widgets/dialog.self-2bd687f9580c0be4213c50b4bb1211c28ceedb045eba954e63d40bfbb4d1affd.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/widgets/sortable.self-6e5e1f07a29b5a89ec1d359363d2800904e3ae548a38ab2f8eded36746d1adbe.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/escape-selector.self-43e4d61501e4ffb1ecba387affbae1eb3e1c863ab0b0e71897851cddd246e50e.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery-ui/widgets/tabs.self-b7f60535e992224ca66c3f11dc943eba9ef42a9605241e27b9dba24c7efb287e.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/lib/batch_actions.self-38f91c8a2e79d0d334f22e68440137ecad0a081f21e35bf9532de1e409f78e8a.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-f3ac78175da0b7357ada35c7b7db4cd119ac305ab118a7effb24b1c5da629e07.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/lib/dropdown-menu.self-5794b6ca26364ce522cb47a8ef050870fda0b886cfeef69ec27ef116900f1984.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/lib/modal_dialog.self-5dfc6e87bae26cd4a021eb86951d3691ed07e6d2bf242a8eb65dc6965e12096c.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/lib/per_page.self-ac2a7829e00b21d672b908a9a64b42aef7632ff1dac9a90dda0e779706c71256.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-411adb7e5ac7ce5602bfedc685bb1253aa41b0f687599f11312f15805f9856f0.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/initializers/batch_actions.self-f693d7e31a910829186af20c64f91da55574e3385b12465c151da4d63f7d9883.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/initializers/datepicker.self-305bbf9fc8b1de2fd07ea201cef994db1e32c3cc29b711f9f5fa13ea70681444.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/initializers/filters.self-a0ee45912355fd1c2122b7c9f94e2fcda6b78cd20723f85cd26d10016b060128.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin/initializers/tabs.self-5bccad3e0e615bd96bf323490a71829beec067511af628e9808993bb6beeb3a5.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/activeadmin-sortable.self-32e5448ca298f5e65a6511132281d321c741d433016bcbae969c2fdaee61817c.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/main.self-e1d1ab2c11a0485457b278c84c141c3185e6ada48a140e522ad105a9c74c2b1a.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/application.self-f2b5b9cbe9166fcd551c3f4e3faf08edf2de70ef4a8af0731e6113582c1d1e86.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:53 +0800
+Started GET "/assets/jquery.payment.self-8651bde2266f0be0f8458d9ff19d5bdc2840adbf6bf428091c18badc68ba6f7d.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:54 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:54 +0800
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2018-11-15 21:41:54 +0800
+Started GET "/" for 127.0.0.1 at 2018-11-15 21:42:17 +0800
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (1141.9ms)
+Completed 200 OK in 1843ms (Views: 1786.1ms | ActiveRecord: 9.9ms)
+
+
+No valid API key has been set, notifications will not be sent
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (229.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "puzzlepiece_development"[0m
+  [1m[35m (131.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "puzzlepiece_test"[0m
+  [1m[35m (1156.8ms)[0m  [1m[35mCREATE DATABASE "puzzlepiece_development" ENCODING = 'utf8'[0m
+  [1m[35m (278.8ms)[0m  [1m[35mCREATE DATABASE "puzzlepiece_test" ENCODING = 'utf8'[0m
+  [1m[35mSQL (27.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_admin_comments" CASCADE[0m
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE "active_admin_comments" ("id" serial NOT NULL PRIMARY KEY, "namespace" character varying, "body" text, "resource_id" character varying NOT NULL, "resource_type" character varying NOT NULL, "author_id" integer, "author_type" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments"  ("author_type", "author_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_namespace" ON "active_admin_comments"  ("namespace")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments"  ("resource_type", "resource_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "admin_users" CASCADE[0m
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" serial NOT NULL PRIMARY KEY, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp, "updated_at" timestamp, "first_name" character varying, "last_name" character varying)[0m
+  [1m[35m (130.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_admin_users_on_email" ON "admin_users"  ("email")[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_admin_users_on_reset_password_token" ON "admin_users"  ("reset_password_token")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "apps" CASCADE[0m
+  [1m[35m (123.2ms)[0m  [1m[35mCREATE TABLE "apps" ("id" serial NOT NULL PRIMARY KEY, "name" character varying(100) NOT NULL, "slug" character varying(100) NOT NULL, "released_at" timestamp NOT NULL, "description" text, "created_at" timestamp, "updated_at" timestamp, "category" character varying DEFAULT 'Games')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "auth_events" CASCADE[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCREATE TABLE "auth_events" ("id" serial NOT NULL PRIMARY KEY, "email" character varying, "success" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "customers" CASCADE[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "customers" ("id" serial NOT NULL PRIMARY KEY, "email" character varying, "billing_name" character varying, "billing_address_1" character varying, "billing_postal_code" character varying, "billing_city" character varying, "billing_country" character varying, "shipping_name" character varying, "shipping_address_1" character varying, "shipping_postal_code" character varying, "shipping_city" character varying, "shipping_country" character varying, "subscribed_at" timestamp, "created_at" timestamp, "updated_at" timestamp, "auth_token" character varying, "billing_region" character varying, "shipping_region" character varying, "status" character varying DEFAULT 'new', "subscription_recurs_at" timestamp, "subscription_status" character varying, "canceled_at" timestamp, "disposition_id" integer, "first_name" character varying, "last_name" character varying, "phone" character varying, "total_charged_cents" integer, "cover_color" character varying, "recurly_account_code" character varying, "quantity" integer DEFAULT 1, "apps_only" boolean DEFAULT FALSE, "call_time" character varying, "product_type" character varying DEFAULT 'puzzlepiece', "upgraded_at" timestamp)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_customers_on_email" ON "customers"  ("email")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "dispositions" CASCADE[0m
+  [1m[35m (22.2ms)[0m  [1m[35mCREATE TABLE "dispositions" ("id" serial NOT NULL PRIMARY KEY, "name" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "leads" CASCADE[0m
+  [1m[35m (67.4ms)[0m  [1m[35mCREATE TABLE "leads" ("id" serial NOT NULL PRIMARY KEY, "first_name" character varying, "last_name" character varying, "email" character varying, "phone" character varying, "address" character varying, "city" character varying, "state" character varying, "zip" character varying, "boy" boolean, "girl" boolean, "age0to6" boolean, "age7to9" boolean, "age10to13" boolean, "age14plus" boolean, "coping" boolean, "handling" boolean, "managing" boolean, "following" boolean, "other" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "product_type" character varying DEFAULT 'puzzlepiece', "sent_abandon_email_at" timestamp)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes" CASCADE[0m
+  [1m[35m (25.6ms)[0m  [1m[35mCREATE TABLE "notes" ("id" serial NOT NULL PRIMARY KEY, "customer_id" integer, "admin_user_id" integer, "text" text, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "shipments" CASCADE[0m
+  [1m[35m (21.8ms)[0m  [1m[35mCREATE TABLE "shipments" ("id" serial NOT NULL PRIMARY KEY, "customer_id" integer, "tracking_number" character varying, "shipped_on" date, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "video_categories" CASCADE[0m
+  [1m[35m (280.5ms)[0m  [1m[35mCREATE TABLE "video_categories" ("id" serial NOT NULL PRIMARY KEY, "name" character varying, "icon" character varying, "position" integer, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "videos" CASCADE[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "videos" ("id" serial NOT NULL PRIMARY KEY, "title" character varying, "slug" character varying, "video_category_id" integer, "description" text, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180412212019)[0m
+  [1m[35m (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20140417125255),
+(20140417201130),
+(20140421214710),
+(20140422125015),
+(20140427032046),
+(20140430235713),
+(20140430235716),
+(20140504131947),
+(20140504173243),
+(20140506203501),
+(20140506222134),
+(20140526155313),
+(20140527112457),
+(20140619212006),
+(20140630185641),
+(20140707164123),
+(20140707164849),
+(20140712204404),
+(20140712213432),
+(20140713000307),
+(20140715170227),
+(20140810180433),
+(20140810185504),
+(20140914172214),
+(20140914172859),
+(20140914175654),
+(20140922175904),
+(20140927145315),
+(20141019013123),
+(20150212184330),
+(20150212192126),
+(20150722220026),
+(20180218172413),
+(20180220212721),
+(20180226184743),
+(20180309205818),
+(20180323201634),
+(20180323204230),
+(20180411180943);
+
+[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-15 14:12:33.804456"], ["updated_at", "2018-11-15 14:12:33.804456"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (9.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_admin_comments" CASCADE[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "active_admin_comments" ("id" serial NOT NULL PRIMARY KEY, "namespace" character varying, "body" text, "resource_id" character varying NOT NULL, "resource_type" character varying NOT NULL, "author_id" integer, "author_type" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments"  ("author_type", "author_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_namespace" ON "active_admin_comments"  ("namespace")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments"  ("resource_type", "resource_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "admin_users" CASCADE[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" serial NOT NULL PRIMARY KEY, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp, "updated_at" timestamp, "first_name" character varying, "last_name" character varying)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_admin_users_on_email" ON "admin_users"  ("email")[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_admin_users_on_reset_password_token" ON "admin_users"  ("reset_password_token")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "apps" CASCADE[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "apps" ("id" serial NOT NULL PRIMARY KEY, "name" character varying(100) NOT NULL, "slug" character varying(100) NOT NULL, "released_at" timestamp NOT NULL, "description" text, "created_at" timestamp, "updated_at" timestamp, "category" character varying DEFAULT 'Games')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "auth_events" CASCADE[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "auth_events" ("id" serial NOT NULL PRIMARY KEY, "email" character varying, "success" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "customers" CASCADE[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "customers" ("id" serial NOT NULL PRIMARY KEY, "email" character varying, "billing_name" character varying, "billing_address_1" character varying, "billing_postal_code" character varying, "billing_city" character varying, "billing_country" character varying, "shipping_name" character varying, "shipping_address_1" character varying, "shipping_postal_code" character varying, "shipping_city" character varying, "shipping_country" character varying, "subscribed_at" timestamp, "created_at" timestamp, "updated_at" timestamp, "auth_token" character varying, "billing_region" character varying, "shipping_region" character varying, "status" character varying DEFAULT 'new', "subscription_recurs_at" timestamp, "subscription_status" character varying, "canceled_at" timestamp, "disposition_id" integer, "first_name" character varying, "last_name" character varying, "phone" character varying, "total_charged_cents" integer, "cover_color" character varying, "recurly_account_code" character varying, "quantity" integer DEFAULT 1, "apps_only" boolean DEFAULT FALSE, "call_time" character varying, "product_type" character varying DEFAULT 'puzzlepiece', "upgraded_at" timestamp)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_customers_on_email" ON "customers"  ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "dispositions" CASCADE[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "dispositions" ("id" serial NOT NULL PRIMARY KEY, "name" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "leads" CASCADE[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "leads" ("id" serial NOT NULL PRIMARY KEY, "first_name" character varying, "last_name" character varying, "email" character varying, "phone" character varying, "address" character varying, "city" character varying, "state" character varying, "zip" character varying, "boy" boolean, "girl" boolean, "age0to6" boolean, "age7to9" boolean, "age10to13" boolean, "age14plus" boolean, "coping" boolean, "handling" boolean, "managing" boolean, "following" boolean, "other" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "product_type" character varying DEFAULT 'puzzlepiece', "sent_abandon_email_at" timestamp)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes" CASCADE[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "notes" ("id" serial NOT NULL PRIMARY KEY, "customer_id" integer, "admin_user_id" integer, "text" text, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "shipments" CASCADE[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "shipments" ("id" serial NOT NULL PRIMARY KEY, "customer_id" integer, "tracking_number" character varying, "shipped_on" date, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "video_categories" CASCADE[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "video_categories" ("id" serial NOT NULL PRIMARY KEY, "name" character varying, "icon" character varying, "position" integer, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "videos" CASCADE[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "videos" ("id" serial NOT NULL PRIMARY KEY, "title" character varying, "slug" character varying, "video_category_id" integer, "description" text, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180412212019)[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20140417125255),
+(20140417201130),
+(20140421214710),
+(20140422125015),
+(20140427032046),
+(20140430235713),
+(20140430235716),
+(20140504131947),
+(20140504173243),
+(20140506203501),
+(20140506222134),
+(20140526155313),
+(20140527112457),
+(20140619212006),
+(20140630185641),
+(20140707164123),
+(20140707164849),
+(20140712204404),
+(20140712213432),
+(20140713000307),
+(20140715170227),
+(20140810180433),
+(20140810185504),
+(20140914172214),
+(20140914172859),
+(20140914175654),
+(20140922175904),
+(20140927145315),
+(20141019013123),
+(20150212184330),
+(20150212192126),
+(20150722220026),
+(20180218172413),
+(20180220212721),
+(20180226184743),
+(20180309205818),
+(20180323201634),
+(20180323204230),
+(20180411180943);
+
+[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-15 14:12:34.020806"], ["updated_at", "2018-11-15 14:12:34.020806"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2018-11-15 14:12:34.026358"], ["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+No valid API key has been set, notifications will not be sent
+  [1m[35m (10.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (174.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "puzzlepiece_development"[0m
+  [1m[35m (136.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "puzzlepiece_test"[0m
+  [1m[35m (314.3ms)[0m  [1m[35mCREATE DATABASE "puzzlepiece_development" ENCODING = 'utf8'[0m
+  [1m[35m (279.9ms)[0m  [1m[35mCREATE DATABASE "puzzlepiece_test" ENCODING = 'utf8'[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_admin_comments" CASCADE[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "active_admin_comments" ("id" serial NOT NULL PRIMARY KEY, "namespace" character varying, "body" text, "resource_id" character varying NOT NULL, "resource_type" character varying NOT NULL, "author_id" integer, "author_type" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments"  ("author_type", "author_id")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_namespace" ON "active_admin_comments"  ("namespace")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments"  ("resource_type", "resource_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "admin_users" CASCADE[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" serial NOT NULL PRIMARY KEY, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp, "updated_at" timestamp, "first_name" character varying, "last_name" character varying)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_admin_users_on_email" ON "admin_users"  ("email")[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_admin_users_on_reset_password_token" ON "admin_users"  ("reset_password_token")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "apps" CASCADE[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "apps" ("id" serial NOT NULL PRIMARY KEY, "name" character varying(100) NOT NULL, "slug" character varying(100) NOT NULL, "released_at" timestamp NOT NULL, "description" text, "created_at" timestamp, "updated_at" timestamp, "category" character varying DEFAULT 'Games')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "auth_events" CASCADE[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "auth_events" ("id" serial NOT NULL PRIMARY KEY, "email" character varying, "success" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "customers" CASCADE[0m
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE TABLE "customers" ("id" serial NOT NULL PRIMARY KEY, "email" character varying, "billing_name" character varying, "billing_address_1" character varying, "billing_postal_code" character varying, "billing_city" character varying, "billing_country" character varying, "shipping_name" character varying, "shipping_address_1" character varying, "shipping_postal_code" character varying, "shipping_city" character varying, "shipping_country" character varying, "subscribed_at" timestamp, "created_at" timestamp, "updated_at" timestamp, "auth_token" character varying, "billing_region" character varying, "shipping_region" character varying, "status" character varying DEFAULT 'new', "subscription_recurs_at" timestamp, "subscription_status" character varying, "canceled_at" timestamp, "disposition_id" integer, "first_name" character varying, "last_name" character varying, "phone" character varying, "total_charged_cents" integer, "cover_color" character varying, "recurly_account_code" character varying, "quantity" integer DEFAULT 1, "apps_only" boolean DEFAULT FALSE, "call_time" character varying, "product_type" character varying DEFAULT 'puzzlepiece', "upgraded_at" timestamp)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE  INDEX  "index_customers_on_email" ON "customers"  ("email")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dispositions" CASCADE[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "dispositions" ("id" serial NOT NULL PRIMARY KEY, "name" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "leads" CASCADE[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "leads" ("id" serial NOT NULL PRIMARY KEY, "first_name" character varying, "last_name" character varying, "email" character varying, "phone" character varying, "address" character varying, "city" character varying, "state" character varying, "zip" character varying, "boy" boolean, "girl" boolean, "age0to6" boolean, "age7to9" boolean, "age10to13" boolean, "age14plus" boolean, "coping" boolean, "handling" boolean, "managing" boolean, "following" boolean, "other" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "product_type" character varying DEFAULT 'puzzlepiece', "sent_abandon_email_at" timestamp)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes" CASCADE[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "notes" ("id" serial NOT NULL PRIMARY KEY, "customer_id" integer, "admin_user_id" integer, "text" text, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "shipments" CASCADE[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "shipments" ("id" serial NOT NULL PRIMARY KEY, "customer_id" integer, "tracking_number" character varying, "shipped_on" date, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "video_categories" CASCADE[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "video_categories" ("id" serial NOT NULL PRIMARY KEY, "name" character varying, "icon" character varying, "position" integer, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "videos" CASCADE[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "videos" ("id" serial NOT NULL PRIMARY KEY, "title" character varying, "slug" character varying, "video_category_id" integer, "description" text, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180412212019)[0m
+  [1m[35m (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20140417125255),
+(20140417201130),
+(20140421214710),
+(20140422125015),
+(20140427032046),
+(20140430235713),
+(20140430235716),
+(20140504131947),
+(20140504173243),
+(20140506203501),
+(20140506222134),
+(20140526155313),
+(20140527112457),
+(20140619212006),
+(20140630185641),
+(20140707164123),
+(20140707164849),
+(20140712204404),
+(20140712213432),
+(20140713000307),
+(20140715170227),
+(20140810180433),
+(20140810185504),
+(20140914172214),
+(20140914172859),
+(20140914175654),
+(20140922175904),
+(20140927145315),
+(20141019013123),
+(20150212184330),
+(20150212192126),
+(20150722220026),
+(20180218172413),
+(20180220212721),
+(20180226184743),
+(20180309205818),
+(20180323201634),
+(20180323204230),
+(20180411180943);
+
+[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-15 14:34:14.269043"], ["updated_at", "2018-11-15 14:34:14.269043"]]
+  [1m[35m (24.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_admin_comments" CASCADE[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "active_admin_comments" ("id" serial NOT NULL PRIMARY KEY, "namespace" character varying, "body" text, "resource_id" character varying NOT NULL, "resource_type" character varying NOT NULL, "author_id" integer, "author_type" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments"  ("author_type", "author_id")[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_namespace" ON "active_admin_comments"  ("namespace")[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE  INDEX  "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments"  ("resource_type", "resource_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "admin_users" CASCADE[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" serial NOT NULL PRIMARY KEY, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp, "updated_at" timestamp, "first_name" character varying, "last_name" character varying)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_admin_users_on_email" ON "admin_users"  ("email")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_admin_users_on_reset_password_token" ON "admin_users"  ("reset_password_token")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "apps" CASCADE[0m
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE TABLE "apps" ("id" serial NOT NULL PRIMARY KEY, "name" character varying(100) NOT NULL, "slug" character varying(100) NOT NULL, "released_at" timestamp NOT NULL, "description" text, "created_at" timestamp, "updated_at" timestamp, "category" character varying DEFAULT 'Games')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "auth_events" CASCADE[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "auth_events" ("id" serial NOT NULL PRIMARY KEY, "email" character varying, "success" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "customers" CASCADE[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "customers" ("id" serial NOT NULL PRIMARY KEY, "email" character varying, "billing_name" character varying, "billing_address_1" character varying, "billing_postal_code" character varying, "billing_city" character varying, "billing_country" character varying, "shipping_name" character varying, "shipping_address_1" character varying, "shipping_postal_code" character varying, "shipping_city" character varying, "shipping_country" character varying, "subscribed_at" timestamp, "created_at" timestamp, "updated_at" timestamp, "auth_token" character varying, "billing_region" character varying, "shipping_region" character varying, "status" character varying DEFAULT 'new', "subscription_recurs_at" timestamp, "subscription_status" character varying, "canceled_at" timestamp, "disposition_id" integer, "first_name" character varying, "last_name" character varying, "phone" character varying, "total_charged_cents" integer, "cover_color" character varying, "recurly_account_code" character varying, "quantity" integer DEFAULT 1, "apps_only" boolean DEFAULT FALSE, "call_time" character varying, "product_type" character varying DEFAULT 'puzzlepiece', "upgraded_at" timestamp)[0m
+  [1m[35m (11.4ms)[0m  [1m[35mCREATE  INDEX  "index_customers_on_email" ON "customers"  ("email")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "dispositions" CASCADE[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "dispositions" ("id" serial NOT NULL PRIMARY KEY, "name" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "leads" CASCADE[0m
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "leads" ("id" serial NOT NULL PRIMARY KEY, "first_name" character varying, "last_name" character varying, "email" character varying, "phone" character varying, "address" character varying, "city" character varying, "state" character varying, "zip" character varying, "boy" boolean, "girl" boolean, "age0to6" boolean, "age7to9" boolean, "age10to13" boolean, "age14plus" boolean, "coping" boolean, "handling" boolean, "managing" boolean, "following" boolean, "other" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "product_type" character varying DEFAULT 'puzzlepiece', "sent_abandon_email_at" timestamp)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes" CASCADE[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "notes" ("id" serial NOT NULL PRIMARY KEY, "customer_id" integer, "admin_user_id" integer, "text" text, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "shipments" CASCADE[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "shipments" ("id" serial NOT NULL PRIMARY KEY, "customer_id" integer, "tracking_number" character varying, "shipped_on" date, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "video_categories" CASCADE[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "video_categories" ("id" serial NOT NULL PRIMARY KEY, "name" character varying, "icon" character varying, "position" integer, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "videos" CASCADE[0m
+  [1m[35m (17.7ms)[0m  [1m[35mCREATE TABLE "videos" ("id" serial NOT NULL PRIMARY KEY, "title" character varying, "slug" character varying, "video_category_id" integer, "description" text, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (23.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (7.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180412212019)[0m
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20140417125255),
+(20140417201130),
+(20140421214710),
+(20140422125015),
+(20140427032046),
+(20140430235713),
+(20140430235716),
+(20140504131947),
+(20140504173243),
+(20140506203501),
+(20140506222134),
+(20140526155313),
+(20140527112457),
+(20140619212006),
+(20140630185641),
+(20140707164123),
+(20140707164849),
+(20140712204404),
+(20140712213432),
+(20140713000307),
+(20140715170227),
+(20140810180433),
+(20140810185504),
+(20140914172214),
+(20140914172859),
+(20140914175654),
+(20140922175904),
+(20140927145315),
+(20141019013123),
+(20150212184330),
+(20150212192126),
+(20150722220026),
+(20180218172413),
+(20180220212721),
+(20180226184743),
+(20180309205818),
+(20180323201634),
+(20180323204230),
+(20180411180943);
+
+[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-15 14:34:14.577909"], ["updated_at", "2018-11-15 14:34:14.577909"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2018-11-15 14:34:14.583399"], ["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+No valid API key has been set, notifications will not be sent
+  [1m[35m (149.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "puzzlepiece_development"[0m
+  [1m[35m (133.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "puzzlepiece_test"[0m
+No valid API key has been set, notifications will not be sent
+Not notifying due to an invalid api_key
+Not notifying due to an invalid api_key
+No valid API key has been set, notifications will not be sent
+No valid API key has been set, notifications will not be sent
+Started GET "/" for 127.0.0.1 at 2018-11-19 23:17:02 +0800
+Not notifying due to an invalid api_key
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.3) lib/pg.rb:56:in `initialize'
+pg (1.1.3) lib/pg.rb:56:in `new'
+pg (1.1.3) lib/pg.rb:56:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+bugsnag (6.9.0) lib/bugsnag/integrations/rack.rb:46:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-19 23:17:04 +0800
+Not notifying due to an invalid api_key
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.3) lib/pg.rb:56:in `initialize'
+pg (1.1.3) lib/pg.rb:56:in `new'
+pg (1.1.3) lib/pg.rb:56:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+bugsnag (6.9.0) lib/bugsnag/integrations/rack.rb:46:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+No valid API key has been set, notifications will not be sent
+Started GET "/" for 127.0.0.1 at 2018-11-19 23:21:31 +0800
+Not notifying due to an invalid api_key
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "puzzlepiece_development" does not exist
+):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:683:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+bugsnag (6.9.0) lib/bugsnag/integrations/rack.rb:46:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-19 23:21:32 +0800
+Not notifying due to an invalid api_key
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "puzzlepiece_development" does not exist
+):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:683:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+bugsnag (6.9.0) lib/bugsnag/integrations/rack.rb:46:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'

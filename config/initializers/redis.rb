@@ -1,0 +1,1 @@
+RedisClient = Redis.new

@@ -1,0 +1,16 @@
+%h2 Batch ##{@batch.uuid}
+
+%h3 Charging #{@batch.cents} cents (#{number_to_currency @batch.cents.to_f/100})
+
+- @batch.transactions.group_by {|t| t.status }.each do |status, transactions|
+  %h2 #{status.titleize}:
+  %ul
+    - transactions.each do |transaction|
+      %li
+        =transaction.id
+        - if transaction.message.present?
+          %br
+          %b Message:
+          =transaction.status
+          |
+          =transaction.message

@@ -1,0 +1,18 @@
+#registrationModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
+  =form_for @customer, class: 'form-inline', method: :put, remote: true do |f|
+    .modal-dialog
+      .modal-content
+        .modal-header
+          %h4#myModalLabel.modal-title Registration
+        .modal-body#customer-edit-form
+          .form-group
+            =f.label :first_name
+            =f.text_field :first_name, class: 'form-control'
+            =f.label :last_name
+            =f.text_field :last_name, class: 'form-control'
+            =f.label :email
+            =f.text_field :email, class: 'form-control'
+            =f.label :phone
+            =f.phone_field :phone, class: 'form-control'
+        .modal-footer
+          =f.button 'Save changes', class: 'btn btn-primary'
